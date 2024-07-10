@@ -1,0 +1,391 @@
+inherited menuCadastroProdutosF: TmenuCadastroProdutosF
+  Left = 401
+  Top = 135
+  Caption = 'Produtos'
+  OnClose = FormClose
+  OnShow = FormShow
+  inherited pgControl: TPageControl
+    ActivePage = tbCadastrar
+    TabIndex = 1
+    inherited tbPesquisar: TTabSheet
+      ClientHeight = 740
+      inherited tPanelPesquisarBotton: TPanel
+        Top = 640
+        Color = clInactiveCaption
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 1
+        inherited btnNovo: TBitBtn
+          OnClick = btnNovoClick
+        end
+        inherited btnFechar: TBitBtn
+          OnClick = btnFecharClick
+          TabOrder = 3
+        end
+        inherited btnEditar: TBitBtn
+          OnClick = btnEditarClick
+          ParentFont = True
+          TabOrder = 1
+        end
+        inherited btnImprimir: TBitBtn
+          OnClick = btnImprimirClick
+          ParentFont = True
+          TabOrder = 2
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Height = 540
+        Color = clMenuBar
+        Columns = <        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'ID'
+            Width = 100
+            FieldName = 'produtoid'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'CATEGORIA'
+            Width = 300
+            FieldName = 'categoriaprodutoid'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'DESCRIÇÃO'
+            Width = 500
+            FieldName = 'ds_produto'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'OBSERVAÇÃO'
+            Width = 300
+            FieldName = 'obs_produto'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'VALOR DE VENDA'
+            Width = 220
+            FieldName = 'vl_venda_produto'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'DATA DE CADASTRO'
+            Width = 250
+            FieldName = 'dt_cadastro_produto'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'STATUS'
+            Width = 250
+            FieldName = 'status_produto'
+          end>
+        DataSource = dataBaseConectionF.dsProduto
+        TabOrder = 2
+      end
+      inherited tPanelPesquisarTop: TPanel
+        Color = clInactiveCaption
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 0
+        inherited btnPesquisar: TBitBtn
+          Left = 416
+          Top = 32
+          OnClick = btnPesquisarClick
+          TabOrder = 2
+        end
+        object cbPesquisa: TComboBox[2]
+          Left = 100
+          Height = 23
+          Top = 40
+          Width = 100
+          Color = clCream
+          ItemHeight = 15
+          Items.Strings = (
+            'NOME'
+            'ID'
+            'CPF'
+          )
+          TabOrder = 0
+          Text = 'SELECIONE'
+        end
+        object edtPesquisar: TEdit[3]
+          Left = 208
+          Height = 23
+          Top = 40
+          Width = 192
+          Alignment = taCenter
+          Color = clCream
+          TabOrder = 1
+        end
+      end
+    end
+    inherited tbCadastrar: TTabSheet
+      ClientHeight = 740
+      inherited tPanelCadastroBotton: TPanel
+        Top = 640
+        Color = clInactiveCaption
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 7
+        inherited btnGravar: TBitBtn
+          OnClick = btnGravarClick
+        end
+        inherited btnExcluir: TBitBtn
+          OnClick = btnExcluirClick
+        end
+        inherited btnCancel: TBitBtn
+          OnClick = btnCancelClick
+        end
+      end
+      object edtIdProduto: TDBEdit[2]
+        Left = 150
+        Height = 23
+        Top = 64
+        Width = 100
+        DataField = 'produtoid'
+        DataSource = dataBaseConectionF.dsProduto
+        ReadOnly = True
+        Alignment = taCenter
+        Color = clCream
+        Enabled = False
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object edtValorProduto: TDBEdit[3]
+        Left = 150
+        Height = 23
+        Top = 232
+        Width = 100
+        DataField = 'vl_venda_produto'
+        DataSource = dataBaseConectionF.dsProduto
+        Alignment = taCenter
+        Color = clCream
+        MaxLength = 0
+        TabOrder = 4
+      end
+      object edtDescProduto: TDBEdit[4]
+        Left = 150
+        Height = 23
+        Top = 176
+        Width = 344
+        DataField = 'ds_produto'
+        DataSource = dataBaseConectionF.dsProduto
+        Alignment = taCenter
+        Color = clCream
+        MaxLength = 0
+        ParentShowHint = False
+        TabOrder = 2
+      end
+      object edtObsProduto: TDBEdit[5]
+        Left = 608
+        Height = 23
+        Top = 176
+        Width = 344
+        DataField = 'obs_produto'
+        DataSource = dataBaseConectionF.dsProduto
+        Alignment = taCenter
+        Color = clCream
+        MaxLength = 0
+        TabOrder = 3
+      end
+      object lbCadCadProId: TLabel[6]
+        Left = 128
+        Height = 15
+        Top = 68
+        Width = 11
+        Caption = 'ID'
+      end
+      object lbCadCadProCategory: TLabel[7]
+        Left = 76
+        Height = 15
+        Top = 124
+        Width = 65
+        Caption = 'CATEGORIA'
+      end
+      object lbCadCadProDesc: TLabel[8]
+        Left = 76
+        Height = 15
+        Top = 180
+        Width = 67
+        Caption = 'DESCRIÇÃO'
+      end
+      object lbCadCadProObs: TLabel[9]
+        Left = 520
+        Height = 15
+        Top = 180
+        Width = 80
+        Caption = 'OBSERVAÇÃO'
+      end
+      object lbCadCadProValueVenda: TLabel[10]
+        Left = 46
+        Height = 15
+        Top = 236
+        Width = 99
+        Caption = 'VALOR DE VENDA'
+      end
+      object lbCadCadProDate: TLabel[11]
+        Left = 31
+        Height = 15
+        Top = 292
+        Width = 114
+        Caption = 'DATA DE CADASTRO'
+      end
+      object lbCadCadProStatus: TLabel[12]
+        Left = 97
+        Height = 15
+        Top = 348
+        Width = 44
+        Caption = 'STATUS'
+      end
+      object cbStatusProduto: TDBComboBox[13]
+        Left = 150
+        Height = 23
+        Top = 344
+        Width = 100
+        Color = clCream
+        DataField = 'status_produto'
+        DataSource = dataBaseConectionF.dsProduto
+        ItemHeight = 15
+        Items.Strings = (
+          'ATIVO'
+          'INATIVO'
+        )
+        MaxLength = 0
+        ParentShowHint = False
+        TabOrder = 6
+      end
+      object edtDate: TDBEdit[14]
+        Left = 150
+        Height = 23
+        Top = 288
+        Width = 100
+        DataField = 'dt_cadastro_produto'
+        DataSource = dataBaseConectionF.dsProduto
+        ReadOnly = True
+        Alignment = taCenter
+        Color = clCream
+        Enabled = False
+        MaxLength = 0
+        TabOrder = 5
+      end
+      object edtCategoriaProduto: TDBEdit[15]
+        Left = 150
+        Height = 23
+        Top = 120
+        Width = 100
+        DataField = 'categoriaprodutoid'
+        DataSource = dataBaseConectionF.dsProduto
+        ReadOnly = True
+        Alignment = taCenter
+        Color = clCream
+        Enabled = False
+        MaxLength = 0
+        TabOrder = 1
+      end
+      object spdCategory: TSpeedButton[16]
+        Left = 256
+        Height = 19
+        Top = 122
+        Width = 19
+        Glyph.Data = {
+          36090000424D3609000000000000360000002800000018000000180000000100
+          20000000000000090000640000006400000000000000000000004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882E5F0C91
+          2EFF0B922EFF0C902EFF0C8E2EFF0D8C2EFF0D892EFF0E882E5F4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882EFF02BE
+          2FFF01C42FFF01C42FFF02C22FFF03BD2FFF0A9B2EFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882EFF01C7
+          30FF00CB30FF00CC30FF00CC30FF00CC30FF06AA2FFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882EFF00CA
+          30FF00C830FF00CB30FF00CC30FF00CC30FF05AF2FFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882EFF00C9
+          30FF01C530FF00C830FF00CB30FF00CC30FF04B52FFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882EFF00C8
+          30FF02C130FF01C530FF00C830FF00CB30FF03BA2FFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882EFF12CB
+          3DFF03BD2FFF02C130FF01C530FF00C830FF02C02FFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882EFF34D2
+          59FF15BF3EFF03BD2FFF02C130FF01C530FF01C530FF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882E2F0E88
+          2EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882EFF3BD3
+          5FFF39C55AFF16BF3FFF03BD2FFF02C130FF00C930FF0E882EFF0E882EFF0E88
+          2EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882E5F0C902EFF6ADC
+          85FF66D781FF61D77DFF5CD679FF57D675FF52D571FF4DD46DFF48D469FF44D0
+          65FF41C561FF3BC65DFF17BF3FFF03BD2FFF01C630FF00C930FF01C530FF02C0
+          2FFF03BA2FFF04B52FFF05AF2FFF06AA2FFF0A9A2EFF0D892EFF0C8D2EFF76C9
+          8BFF73C087FF6EC082FF68C07FFF63C17BFF5EC177FF59C273FF53C36FFF4EC4
+          6BFF49C467FF44C663FF3EC75FFF18BF40FF03BD2FFF02C130FF01C530FF00C8
+          30FF00CB30FF00CC30FF00CC30FF00CC30FF03BD2FFF0D892EFF0E882EFF7ECA
+          91FF7BC28DFF76C189FF70C185FF6BC281FF66C27DFF61C279FF5BC375FF56C3
+          71FF51C46DFF4BC569FF46C665FF41C861FF19C041FF03BD2FFF02C130FF01C5
+          30FF00C830FF00CB30FF00CC30FF00CC30FF02C22FFF0E882EFF0E882EFF85CC
+          97FF82C393FF7DC38FFF78C38BFF73C287FF6EC383FF69C37FFF64C37BFF5EC4
+          77FF59C474FF54C56FFF4EC66BFF49C767FF44C863FF1AC042FF03BD2FFF02C1
+          30FF01C530FF00C830FF00CB30FF00CC30FF01C42FFF0E882EFF0D8C2EFF8DD1
+          9EFF8AC599FF85C495FF80C491FF7AC48DFF75C489FF70C485FF6BC482FF66C4
+          7EFF61C57AFF5CC576FF56C672FF51C76EFF4CC86AFF46C965FF1BC043FF03BD
+          2FFF02C130FF01C530FF00C830FF00CB30FF01C42FFF0D8A2EFF0C902EFF90E7
+          A4FF8CDFA0FF87DE9CFF82DD98FF7DDD94FF78DC90FF73DB8CFF6FDA88FF6AD5
+          84FF69C580FF63C67CFF5EC678FF59C774FF51D370FF4CD66CFF46D668FF1ACC
+          44FF00C830FF00C930FF00CA30FF01C730FF03BA2FFF0C8D2EFF0E882E5F0E88
+          2EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882EFF299545FF71DB
+          8AFF71C686FF6BC682FF66C77EFF61C77AFF58D876FF0E882EFF0E882EFF0E88
+          2EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882EFF0E882E5F4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047002B9647FF79DD
+          91FF78C78CFF73C788FF6EC784FF69C880FF60D97DFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047002C9748FF81DE
+          97FF80C892FF7BC88EFF76C88BFF70C886FF68DA83FF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047002E984AFF88DF
+          9DFF88C998FF83C994FF7DC991FF78C98DFF6FDC89FF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C70470030994BFF90E1
+          A3FF8FCB9EFF8ACB9AFF85CA96FF80CA93FF77DD8FFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C70470032994DFF97E3
+          A9FF97CDA5FF92CCA1FF8DCC9DFF87CB99FF7FDE95FF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C704700349A4EFF9FE4
+          B0FF9ECFABFF9ACEA7FF94CDA3FF8FCD9FFF86E09CFF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C704700369B50FFA6EA
+          B6FFA4DAB1FF9FD7ADFF9AD6A9FF95D7A6FF8DE4A2FF0E882EFF4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C7047000E882E5F0C90
+          2EFF0D8C2EFF0E882EFF0E882EFF0C8D2EFF0C902EFF0E882E5F4C7047004C70
+          47004C7047004C7047004C7047004C7047004C7047004C704700
+        }
+        OnClick = spdCategoryClick
+      end
+    end
+  end
+end

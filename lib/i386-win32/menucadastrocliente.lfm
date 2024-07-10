@@ -1,0 +1,219 @@
+inherited menuCadastroClienteF: TmenuCadastroClienteF
+  Left = 429
+  Top = 121
+  Caption = 'Clientes'
+  OnClose = FormClose
+  OnShow = FormShow
+  inherited pgControl: TPageControl
+    ActivePage = tbCadastrar
+    TabIndex = 1
+    inherited tbPesquisar: TTabSheet
+      ClientHeight = 740
+      inherited tPanelPesquisarBotton: TPanel
+        Top = 640
+        Color = clInactiveCaption
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 1
+        inherited btnNovo: TBitBtn
+          OnClick = btnNovoClick
+        end
+        inherited btnFechar: TBitBtn
+          OnClick = btnFecharClick
+          TabOrder = 3
+        end
+        inherited btnEditar: TBitBtn
+          OnClick = btnEditarClick
+          ParentFont = True
+          TabOrder = 1
+        end
+        inherited btnImprimir: TBitBtn
+          Left = 233
+          OnClick = btnImprimirClick
+          ParentFont = True
+          TabOrder = 2
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Height = 540
+        Color = clMenuBar
+        Columns = <        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'ID'
+            Width = 240
+            FieldName = 'clienteid'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'TIPO DO CLIENTE'
+            Width = 240
+            FieldName = 'tipo_cliente'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'CPF/CNPJ'
+            Width = 480
+            FieldName = 'cpf_cnpj_cliente'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Color = clTeal
+            Title.Caption = 'NOME COMPLETO'
+            Width = 960
+            FieldName = 'nome_cliente'
+          end>
+        DataSource = dataBaseConectionF.dsCliente
+        TabOrder = 2
+      end
+      inherited tPanelPesquisarTop: TPanel
+        Color = clInactiveCaption
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 0
+        inherited btnPesquisar: TBitBtn
+          Left = 416
+          Top = 32
+          OnClick = btnPesquisarClick
+          TabOrder = 2
+        end
+        object edtPesquisar: TEdit[2]
+          Left = 208
+          Height = 23
+          Top = 40
+          Width = 192
+          Alignment = taCenter
+          Color = clCream
+          TabOrder = 1
+        end
+        object cbPesquisa: TComboBox[3]
+          Left = 100
+          Height = 23
+          Top = 40
+          Width = 100
+          Color = clCream
+          ItemHeight = 15
+          Items.Strings = (
+            'NOME'
+            'ID'
+            'CPF'
+          )
+          TabOrder = 0
+          Text = 'SELECIONE'
+        end
+      end
+    end
+    inherited tbCadastrar: TTabSheet
+      ClientHeight = 740
+      inherited tPanelCadastroBotton: TPanel
+        Top = 640
+        Color = clInactiveCaption
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 4
+        inherited btnGravar: TBitBtn
+          OnClick = btnGravarClick
+        end
+        inherited btnExcluir: TBitBtn
+          OnClick = btnExcluirClick
+        end
+        inherited btnCancel: TBitBtn
+          OnClick = btnCancelClick
+        end
+      end
+      object edtIdCliente: TDBEdit[2]
+        Left = 150
+        Height = 23
+        Top = 64
+        Width = 100
+        DataField = 'clienteid'
+        DataSource = dataBaseConectionF.dsCliente
+        ReadOnly = True
+        Alignment = taCenter
+        Color = clCream
+        Enabled = False
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object edtCpfCnpj: TDBEdit[3]
+        Left = 150
+        Height = 23
+        Top = 176
+        Width = 176
+        DataField = 'cpf_cnpj_cliente'
+        DataSource = dataBaseConectionF.dsCliente
+        Alignment = taCenter
+        Color = clCream
+        MaxLength = 0
+        TabOrder = 2
+      end
+      object edtNomeCompleto: TDBEdit[4]
+        Left = 150
+        Height = 23
+        Top = 232
+        Width = 326
+        DataField = 'nome_cliente'
+        DataSource = dataBaseConectionF.dsCliente
+        Alignment = taCenter
+        Color = clCream
+        MaxLength = 0
+        TabOrder = 3
+      end
+      object lbCadCadCliId: TLabel[5]
+        Left = 128
+        Height = 15
+        Top = 68
+        Width = 11
+        Caption = 'ID'
+      end
+      object lbCadCadCliTipo: TLabel[6]
+        Left = 48
+        Height = 15
+        Top = 124
+        Width = 97
+        Caption = 'TIPO DO CLIENTE'
+      end
+      object lbCadCadCliCpfCnpj: TLabel[7]
+        Left = 86
+        Height = 15
+        Top = 180
+        Width = 56
+        Caption = 'CPF/CNPJ'
+      end
+      object lbCadCadCliNome: TLabel[8]
+        Left = 43
+        Height = 15
+        Top = 236
+        Width = 102
+        Caption = 'NOME COMPLETO'
+      end
+      object cbTipoCliente: TDBComboBox[9]
+        Left = 150
+        Height = 23
+        Top = 120
+        Width = 100
+        Color = clCream
+        DataField = 'tipo_cliente'
+        DataSource = dataBaseConectionF.dsCliente
+        ItemHeight = 15
+        Items.Strings = (
+          'F'
+          'J'
+        )
+        MaxLength = 0
+        TabOrder = 1
+      end
+    end
+  end
+end
