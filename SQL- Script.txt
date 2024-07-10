@@ -1,0 +1,55 @@
+create table CATEGORIA_PRODUTO (
+CATEGORIAPRODUTOID INTEGER not null,
+DS_CATEGORIA_PRODUTO VARCHAR(50) not null,
+primary key (CATEGORIAPRODUTOID));
+
+create table CLIENTE(
+CLIENTEID INTEGER not null,
+TIPO_CLIENTE CHAR(1) not null,
+CPF_CNPJ_CLIENTE VARCHAR(18) not null,
+NOME_CLIENTE VARCHAR(100) not null,
+primary key (CLIENTEID));
+
+create table PRODUTO(
+PRODUTOID INTEGER not null,
+CATEGORIAPRODUTOID INTEGER not null,
+DS_PRODUTO VARCHAR(50) not null,
+OBS_PRODUTO VARCHAR(300) null,
+VL_VENDA_PRODUTO NUMERIC(15,2) not null,
+DT_CADASTRO_PRODUTO TIMESTAMP not null,
+STATUS_PRODUTO VARCHAR(10) not null,
+primary key (PRODUTOID),
+foreign key (CATEGORIAPRODUTOID) references CATEGORIA_PRODUTO (CATEGORIAPRODUTOID));
+
+create table ORCAMENTO (
+ORCAMENTOID INTEGER not null,
+CLIENTEID INTEGER not null,
+DT_ORCAMENTO TIMESTAMP not null,
+DT_VALIDADE_ORCAMENTO TIMESTAMP not null,
+VL_TOTAL_ORCAMENTO NUMERIC(15,2) not null,
+primary key(ORCAMENTOID),
+foreign KEY(CLIENTEID) references CLIENTE(CLIENTEID));
+
+create table ORCAMENTO_ITEM (
+ORCAMENTOITEMID INTEGER not null,
+ORCAMENTOID INTEGER not null,
+PRODUTOID INTEGER not null,
+QT_PRODUTO NUMERIC(15,2) not null,
+VL_UNITARIO NUMERIC(15,2) not null,
+VL_TOTAL NUMERIC(15,2) not null,
+primary key (ORCAMENTOITEMID),
+foreign key (ORCAMENTOID) references ORCAMENTO (ORCAMENTOID),
+foreign key (PRODUTOID) references PRODUTO (PRODUTOID));
+
+create table USUARIOS (
+ID SERIAL primary key,
+USUARIO VARCHAR(30),
+NOME_COMPLETO VARCHAR(60),
+SENHA VARCHAR(50));
+
+create sequence categoria_produto_categoriaprodutoid_seq start with 0;
+create sequence orcamento_orcamentoid_seq start with 0;
+create sequence orcamento_item_seq start with 0;
+create sequence produto_produtoid start with 0;
+create sequence cliente_clienteid start with 0;
+create sequence usuario_oid start with 0;
