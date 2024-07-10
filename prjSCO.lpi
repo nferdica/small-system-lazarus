@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="prjSCO"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="lazreport"/>
+      </Item>
+      <Item>
+        <PackageName Value="DateTimeCtrlsDsgn"/>
+      </Item>
+      <Item>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponentdesign"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="prjSCO.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuPrincipalF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuPrincipal"/>
+      </Unit>
+      <Unit>
+        <Filename Value="databaseconection.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dataBaseConectionF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="dataBaseConection"/>
+      </Unit>
+      <Unit>
+        <Filename Value="xcadmodelo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="xCadModeloF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="xCadModelo"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastrocliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroCliente"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastroprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroProdutos"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastrocategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroCategoria"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastrousuario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroUsuarioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroUsuario"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menusobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuSobreF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuSobre"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relcliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relCliente"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relProdutos"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relusuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relUsuariosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relUsuarios"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relcadprod.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relCatProdF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relCadProd"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menulogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuLoginF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuLogin"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menulogincadastro.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuLoginCadastroF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuLoginCadastro"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuOrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuOrcamento"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuorcamentocliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuOrcamentoClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuOrcamentoCliente"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastroprodutoscategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroProdutosCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroProdutosCategoria"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuorcamentoproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuOrcamentoProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuOrcamentoProduto"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuorcamentoadicionarproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuOrcamentoAdicionarProdutoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuOrcamentoAdicionarProduto"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relOrcamentof"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relOrcamento"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="prjSCO"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+      <Item>
+        <Name Value="EZDatabaseError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

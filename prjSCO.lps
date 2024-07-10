@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="prjSCO.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="20"/>
+        <CursorPos X="44" Y="18"/>
+        <UsageCount Value="114"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuPrincipalF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuPrincipal"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="204"/>
+        <CursorPos X="31" Y="227"/>
+        <UsageCount Value="114"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="databaseconection.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dataBaseConectionF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="dataBaseConection"/>
+        <TopLine Value="74"/>
+        <CursorPos X="45" Y="95"/>
+        <UsageCount Value="114"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="xcadmodelo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="xCadModeloF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="xCadModelo"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="4"/>
+        <UsageCount Value="113"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastrocliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroCliente"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="129"/>
+        <CursorPos X="3" Y="161"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastroprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroProdutos"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="67"/>
+        <CursorPos X="159" Y="71"/>
+        <UsageCount Value="98"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastrocategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroCategoria"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="58"/>
+        <CursorPos X="86" Y="77"/>
+        <UsageCount Value="92"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastrousuario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroUsuarioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroUsuario"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="57"/>
+        <CursorPos X="86" Y="83"/>
+        <UsageCount Value="91"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menusobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuSobreF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuSobre"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="7"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="88"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relcliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relCliente"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="10"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="86"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relProdutos"/>
+        <EditorIndex Value="16"/>
+        <CursorPos X="16" Y="50"/>
+        <UsageCount Value="84"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relusuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relUsuariosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relUsuarios"/>
+        <EditorIndex Value="18"/>
+        <TopLine Value="2"/>
+        <CursorPos X="28" Y="45"/>
+        <UsageCount Value="83"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relcadprod.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relCatProdF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relCadProd"/>
+        <EditorIndex Value="17"/>
+        <TopLine Value="19"/>
+        <CursorPos X="81" Y="54"/>
+        <UsageCount Value="82"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menulogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuLoginF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuLogin"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="92"/>
+        <CursorPos X="9" Y="112"/>
+        <UsageCount Value="81"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menulogincadastro.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuLoginCadastroF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuLoginCadastro"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="61"/>
+        <CursorPos Y="99"/>
+        <UsageCount Value="70"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuOrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuOrcamento"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="235"/>
+        <CursorPos X="11" Y="67"/>
+        <UsageCount Value="67"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuorcamentocliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuOrcamentoClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuOrcamentoCliente"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="53"/>
+        <CursorPos X="9" Y="77"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menucadastroprodutoscategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuCadastroProdutosCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuCadastroProdutosCategoria"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="52"/>
+        <CursorPos X="76" Y="79"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuorcamentoproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuOrcamentoProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuOrcamentoProduto"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="47"/>
+        <CursorPos X="55" Y="85"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuorcamentoadicionarproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuOrcamentoAdicionarProdutoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menuOrcamentoAdicionarProduto"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="75"/>
+        <CursorPos Y="102"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relOrcamentof"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relOrcamento"/>
+        <EditorIndex Value="19"/>
+        <TopLine Value="19"/>
+        <CursorPos X="33" Y="45"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\prjPrototype\menuprincipal.pas"/>
+        <UnitName Value="MenuPrincipal"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="43"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\prjTerminate\unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="89"/>
+        <CursorPos X="5" Y="110"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\fpc\3.2.2\source\packages\fcl-db\src\base\db.pas"/>
+        <UnitName Value="DB"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1718"/>
+        <CursorPos X="14" Y="1738"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\..\..\nferd\Downloads\PROJETO-20240707T085957Z-001\PROJETO\untorcamento.pas"/>
+        <UnitName Value="untOrcamento"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="3" Y="117"/>
+        <UsageCount Value="8"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="202" Column="40" TopLine="179"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="201" Column="40" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="125" Column="3" TopLine="122"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="93" Column="70" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="84" Column="106" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="244" Column="46" TopLine="235"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="115" Column="148" TopLine="113"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="247" Column="155" TopLine="236"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamentoadicionarproduto.pas"/>
+        <Caret Line="101" Column="6" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="menulogin.pas"/>
+        <Caret Line="125" Column="27" TopLine="96"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="134" Column="9" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="116" Column="32" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="121" Column="26" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="122" Column="16" TopLine="103"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="288" Column="8" TopLine="257"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="284" Column="16" TopLine="252"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="289" Column="39" TopLine="256"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="9" Column="50"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="289" Column="40" TopLine="256"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="49" Column="5" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="databaseconection.pas"/>
+        <Caret Line="125" Column="16" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="databaseconection.pas"/>
+        <Caret Line="127" Column="8" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="292" Column="2" TopLine="258"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="93" Column="28" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="9" Column="50"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="66" Column="65" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="311" Column="32" TopLine="281"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="89" Column="5" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="48" Column="51" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="menuorcamento.pas"/>
+        <Caret Line="67" Column="11" TopLine="49"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="dataBaseConectionF.qryOrcamentoorcamentoid.AsString"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>
