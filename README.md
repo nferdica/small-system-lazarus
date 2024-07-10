@@ -45,12 +45,12 @@ cd small-system-lazarus
 3. Crie o banco de dados utilizando o script fornecido:
 
 * Abra o seu cliente PostgreSQL (como DBeaver ou pgAdmin).
-* Execute o script script.sql localizado na pasta database para criar o banco de dados e as tabelas necessárias.
+* Execute o script `script.sql` localizado na pasta database para criar o banco de dados e as tabelas necessárias.
 
 4. Abra o projeto na IDE Lazarus:
 
 * Abra a IDE Lazarus
-* Vá para File > Open e selecione o arquivo do prjSCO.lpi no diretório clonado.
+* Vá para File > Open e selecione o arquivo do `prjSCO.lpi` no diretório clonado.
 
 
 ## Uso
